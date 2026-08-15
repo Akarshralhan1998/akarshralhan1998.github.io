@@ -12,13 +12,15 @@
       --text: #202124;
       --muted: #5f6368;
       --line: #dedad2;
-      --accent: #2c5aa0;
-      --accent-soft: #d4e4f7;
+      --accent: #5a6b7a;
+      --accent-soft: #e8eef5;
       --card: #ffffff;
-      --nav: #1a3a52;
+      --nav: #3a4a5a;
       --shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
       --radius: 18px;
       --max-width: 1080px;
+      --inprep-badge: #ffecd1;
+      --inprep-text: #7a4f1f;
     }
 
     * { box-sizing: border-box; }
@@ -42,7 +44,7 @@
     a:hover { color: #0052a3; }
 
     header {
-      background: linear-gradient(135deg, #1a3a52 0%, #2c5aa0 100%);
+      background: linear-gradient(135deg, #3a4a5a 0%, #5a6b7a 100%);
       color: white;
       padding: 70px 22px 60px;
       text-align: center;
@@ -55,21 +57,21 @@
 
     h1 {
       margin: 0 0 12px;
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-size: clamp(2rem, 5vw, 3.2rem);
       line-height: 1.1;
       letter-spacing: -0.03em;
     }
 
     .subtitle {
       margin: 0 auto 14px;
-      font-size: clamp(1rem, 2.1vw, 1.3rem);
+      font-size: clamp(0.95rem, 2.1vw, 1.15rem);
       max-width: 850px;
       color: rgba(255, 255, 255, 0.95);
     }
 
     .contact-info {
       margin: 0 auto 20px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: rgba(255, 255, 255, 0.92);
     }
 
@@ -78,7 +80,7 @@
     .hero-blurb {
       margin: 0 auto 24px;
       max-width: 850px;
-      font-size: 1.02rem;
+      font-size: 0.98rem;
       color: rgba(255, 255, 255, 0.90);
       line-height: 1.7;
     }
@@ -96,10 +98,10 @@
       padding: 9px 14px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.92);
-      color: #1a3a52;
+      color: #3a4a5a;
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       transition: all 0.2s ease;
     }
 
@@ -112,7 +114,7 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background-color: rgba(26, 58, 82, 0.96);
+      background-color: rgba(58, 74, 90, 0.96);
       backdrop-filter: blur(10px);
       padding: 10px 8px;
       text-align: center;
@@ -124,12 +126,12 @@
       margin: 4px 9px;
       color: white;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.91rem;
       font-weight: 600;
       transition: color 0.2s ease;
     }
 
-    nav a:hover { color: #7ec8ff; }
+    nav a:hover { color: #b8d4f1; }
 
     main {
       max-width: var(--max-width);
@@ -149,7 +151,7 @@
 
     h2 {
       margin: 0 0 15px;
-      font-size: 1.65rem;
+      font-size: 1.52rem;
       line-height: 1.2;
       letter-spacing: -0.02em;
       color: var(--accent);
@@ -157,14 +159,14 @@
 
     h3 {
       margin: 22px 0 8px;
-      font-size: 1.08rem;
-      color: #1a3a52;
+      font-size: 1.02rem;
+      color: #3a4a5a;
     }
 
     p { margin-top: 0; }
 
     .lead {
-      font-size: 1.06rem;
+      font-size: 1.02rem;
       color: #303134;
       line-height: 1.8;
     }
@@ -184,11 +186,11 @@
 
     .mini-card h3 {
       margin-top: 0;
-      color: #1a3a52;
+      color: #3a4a5a;
     }
 
     .mini-card p {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       line-height: 1.6;
     }
 
@@ -201,10 +203,10 @@
 
     .tag {
       background: var(--accent-soft);
-      color: #1a3a52;
+      color: #3a4a5a;
       padding: 5px 10px;
       border-radius: 999px;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-weight: 700;
     }
 
@@ -226,12 +228,13 @@
     .timeline-item .role {
       font-weight: 700;
       margin-bottom: 2px;
-      color: #1a3a52;
+      color: #3a4a5a;
+      font-size: 0.98rem;
     }
 
     .timeline-item .place {
       color: var(--muted);
-      font-size: 0.94rem;
+      font-size: 0.9rem;
       margin-bottom: 7px;
     }
 
@@ -243,7 +246,7 @@
     .timeline-item li { 
       margin-bottom: 7px;
       line-height: 1.6;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .publications {
@@ -256,7 +259,7 @@
       padding: 15px 0;
       border-bottom: 1px solid var(--line);
       line-height: 1.7;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .publications li:last-child { border-bottom: none; }
@@ -265,13 +268,18 @@
 
     .paper-status {
       display: inline-block;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      color: #1a3a52;
-      background: var(--accent-soft);
+      color: var(--inprep-text);
+      background: var(--inprep-badge);
       padding: 2px 8px;
       border-radius: 999px;
       margin-right: 6px;
+      white-space: nowrap;
+    }
+
+    .paper-link {
+      font-weight: 700;
       white-space: nowrap;
     }
 
@@ -284,7 +292,7 @@
     .awards li {
       padding: 12px 0;
       border-bottom: 1px solid #eee;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       line-height: 1.6;
     }
 
@@ -304,15 +312,16 @@
       padding: 9px 13px;
       border-radius: 999px;
       background: var(--accent-soft);
-      color: #1a3a52;
+      color: #3a4a5a;
       text-decoration: none;
       font-weight: 700;
-      border: 1px solid #a8c5e0;
+      border: 1px solid #c5d5e8;
       transition: all 0.2s ease;
+      font-size: 0.88rem;
     }
 
     .social-links li a:hover { 
-      background: #2c5aa0;
+      background: #5a6b7a;
       color: white;
     }
 
@@ -332,14 +341,14 @@
 
     .skill-category h4 {
       margin: 0 0 8px;
-      font-size: 0.95rem;
-      color: #1a3a52;
+      font-size: 0.92rem;
+      color: #3a4a5a;
       font-weight: 700;
     }
 
     .skill-category p {
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 0.87rem;
       color: #666;
       line-height: 1.5;
     }
@@ -349,7 +358,7 @@
       color: white;
       text-align: center;
       padding: 18px 12px;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
 
     @media (max-width: 760px) {
@@ -358,7 +367,7 @@
       main { padding: 24px 14px 45px; }
       .section-card { padding: 20px; }
       .grid-two { grid-template-columns: 1fr; }
-      h1 { font-size: 2rem; }
+      h1 { font-size: 1.9rem; }
       .skills-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -369,13 +378,13 @@
     <div class="hero-content">
       <h1>Akarsh Ralhan</h1>
       <p class="subtitle">Climate & Geospatial Data Scientist | Earth System Modeling | Physics-Informed Machine Learning</p>
-      <p class="contact-info">Email: <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | Phone: <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
+      <p class="contact-info">Email: <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a> | Phone: <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
       <p class="hero-blurb">I develop physics-informed machine learning frameworks to improve climate model representations, enhance Earth system predictability, and reduce climate uncertainty. My research translates advances in geospatial data processing, remote sensing, and statistical modeling into operational Earth system science with direct relevance to weather prediction, climate services, and climate-informed decision-making.</p>
       <div class="hero-links">
         <a href="mailto:ralhanakarsh1998@gmail.com">Email</a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=uQkM6xAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://github.com/Akarshralhan1998" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://orcid.org/0009-0008-4953-9329" target="_blank" rel="noopener">ORCID</a>
         <a href="https://linkedin.com/in/akarsh-ralhan" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
@@ -469,23 +478,21 @@
       <h2>Publications</h2>
       <ul class="publications">
         <li>
-          <span class="paper-status">Under Review</span>
-          <span class="paper-title">Ralhan, A., et al.:</span> "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization," <em>Journal of Advances in Modeling Earth Systems</em> (JAMES).
+          <span class="paper-title">Ralhan, A., et al.:</span> "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization," <em>Journal of Advances in Modeling Earth Systems</em>, 13(3), e2025MS005436. <a class="paper-link" href="https://doi.org/10.1029/2025MS005436" target="_blank" rel="noopener">Web access</a>.
         </li>
         <li>
-          <span class="paper-status">Published</span>
-          <span class="paper-title">Maheshwarkar, P., Ralhan, A., et al.:</span> "Understanding the influence of meteorology and emission sources on PM2.5 mass concentrations across India," <em>Journal of Geophysical Research: Atmospheres</em>, 2022.
+          <span class="paper-title">Maheshwarkar, P., Ralhan, A., et al.:</span> "Understanding the Influence of Meteorology and Emission Sources on PM2.5 Mass Concentrations Across India: First Results From the COALESCE Network," <em>Journal of Geophysical Research: Atmospheres</em>, 127(8), e2021JD035663. <a class="paper-link" href="https://doi.org/10.1029/2021JD035663" target="_blank" rel="noopener">Web access</a>.
         </li>
         <li>
-          <span class="paper-status">In Prep</span>
+          <span class="paper-status">In Preparation</span>
           <span class="paper-title">Ralhan, A., et al.:</span> "Development of a Globally Applicable, Scale-Aware, and Multi-Modal Compatible Land Surface Albedo Parameterization Framework."
         </li>
         <li>
-          <span class="paper-status">In Prep</span>
+          <span class="paper-status">In Preparation</span>
           <span class="paper-title">Ralhan, A., et al.:</span> "Capturing the Crop Phenological Response on Land Albedo Using a Novel Albedo Parameterization."
         </li>
         <li>
-          <span class="paper-status">In Prep</span>
+          <span class="paper-status">In Preparation</span>
           <span class="paper-title">Ralhan, A., et al.:</span> "Implications of Changing Albedo Parameterization on Regional Sub-Seasonal to Seasonal to Decadal Predictions."
         </li>
       </ul>
@@ -619,11 +626,11 @@
     <section id="connect" class="section-card">
       <h2>Connect</h2>
       <p>I'm passionate about developing climate science solutions that bridge research, operational impact, and decision-relevant applications. I'm always interested in collaborating on problems at the intersection of climate science, geospatial data, machine learning, and Earth system predictability.</p>
-      <p><strong>Contact:</strong> <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
+      <p><strong>Contact:</strong> <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a> | <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
       <ul class="social-links">
-        <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&user=uQkM6xAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="https://github.com/Akarshralhan1998" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="https://orcid.org/0009-0008-4953-9329" target="_blank" rel="noopener">ORCID</a></li>
         <li><a href="https://linkedin.com/in/akarsh-ralhan" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
