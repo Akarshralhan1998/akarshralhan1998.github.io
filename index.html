@@ -13,325 +13,349 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
-            background: #fafafa;
+            background: #f5f5f5;
         }
         
         .container {
-            max-width: 700px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            padding: 40px 30px;
             background: white;
             min-height: 100vh;
         }
         
+        /* Sidebar */
+        .sidebar {
+            border-right: 2px solid #cc0000;
+            padding-right: 30px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #000;
+        }
+        
+        .title {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .photo {
+            width: 100%;
+            max-width: 240px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .contact-section {
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+        
+        .contact-section h3 {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #cc0000;
+        }
+        
+        .contact-section a {
+            display: block;
+            color: #0066cc;
+            text-decoration: none;
+            margin-bottom: 4px;
+        }
+        
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Main Content */
+        .content {
+            font-size: 14px;
+        }
+        
         h1 {
             font-size: 28px;
-            margin-bottom: 8px;
-        }
-        
-        .subtitle {
-            color: #666;
-            font-size: 15px;
-            margin-bottom: 16px;
-        }
-        
-        .bio {
-            margin-bottom: 24px;
-            color: #555;
-            font-size: 14px;
-            line-height: 1.7;
-        }
-        
-        .links {
-            margin-bottom: 32px;
-            font-size: 14px;
-        }
-        
-        .links a {
-            color: #0066cc;
-            text-decoration: none;
-            margin-right: 12px;
-        }
-        
-        .links a:hover {
-            text-decoration: underline;
-        }
-        
-        .nav {
-            border-top: 1px solid #e0e0e0;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 0;
-            margin-bottom: 32px;
-            font-size: 14px;
-        }
-        
-        .nav a {
-            color: #0066cc;
-            text-decoration: none;
-            margin-right: 16px;
-        }
-        
-        .nav a:hover {
-            text-decoration: underline;
-        }
-        
-        section {
-            margin-bottom: 40px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #000;
         }
         
         h2 {
-            font-size: 18px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 28px;
             margin-bottom: 16px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 8px;
+            color: #cc0000;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 6px;
         }
         
         h3 {
-            font-size: 15px;
+            font-size: 14px;
+            font-weight: bold;
             margin-top: 16px;
             margin-bottom: 6px;
-            font-weight: 600;
+            color: #000;
         }
         
-        .subtitle-text {
+        .subtitle {
             font-size: 13px;
             color: #666;
-            margin-bottom: 8px;
+            font-style: italic;
+            margin-bottom: 12px;
         }
         
-        .description {
-            font-size: 14px;
-            color: #555;
+        p {
             margin-bottom: 12px;
-            line-height: 1.6;
+            line-height: 1.7;
+            color: #444;
         }
         
         ul {
             list-style: none;
-            font-size: 14px;
-            color: #555;
-            line-height: 1.7;
+            margin-bottom: 16px;
         }
         
         li {
-            margin-bottom: 8px;
-            padding-left: 8px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            padding-left: 0;
+        }
+        
+        li:before {
+            content: "• ";
+            color: #cc0000;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
         
         .keywords {
-            font-size: 13px;
+            font-size: 12px;
             color: #888;
-            margin-top: 8px;
+            margin-top: 12px;
             font-style: italic;
         }
         
-        .award-item {
-            margin-bottom: 12px;
-            font-size: 14px;
-            color: #555;
+        .publication-item {
+            margin-bottom: 14px;
+            line-height: 1.7;
         }
         
-        .year {
-            font-weight: 600;
-            color: #333;
+        .publication-item strong {
+            font-weight: bold;
+        }
+        
+        .publication-item em {
+            font-style: italic;
         }
         
         footer {
-            border-top: 1px solid #e0e0e0;
+            grid-column: 1 / -1;
+            border-top: 1px solid #ddd;
             padding-top: 20px;
+            margin-top: 40px;
             font-size: 12px;
             color: #999;
             text-align: center;
         }
         
-        a {
-            color: #0066cc;
-        }
-        
-        @media (max-width: 600px) {
+        /* Responsive */
+        @media (max-width: 800px) {
             .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
                 padding: 20px 15px;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-bottom: 2px solid #cc0000;
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+            
+            .photo {
+                max-width: 150px;
             }
             
             h1 {
                 font-size: 24px;
-            }
-            
-            .links {
-                font-size: 13px;
-            }
-            
-            .links a {
-                margin-right: 8px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Akarsh Ralhan</h1>
-        <p class="subtitle">PhD Candidate, Atmospheric and Oceanic Science | University of Maryland</p>
-        <p class="subtitle">Climate and Geospatial Data Scientist | Earth System Modeling & Machine Learning</p>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="name">Akarsh Ralhan</div>
+            <div class="title">PhD Candidate<br>Atmospheric and Oceanic Science<br>University of Maryland</div>
+            
+            <!-- Contact -->
+            <div class="contact-section">
+                <h3>Contact</h3>
+                <a href="mailto:aralhan@umd.edu">aralhan@umd.edu</a>
+            </div>
+            
+            <!-- Links -->
+            <div class="contact-section">
+                <h3>Links</h3>
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+                <a href="https://github.com/Akarshralhan1998" target="_blank">GitHub</a>
+                <a href="https://orcid.org" target="_blank">ORCID</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </aside>
         
-        <div class="links">
-            <a href="mailto:aralhan@umd.edu">Email</a>
-            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://orcid.org" target="_blank">ORCID</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-        
-        <div class="nav">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#experience">Experience</a>
-            <a href="#awards">Awards</a>
-            <a href="#connect">Connect</a>
-        </div>
-        
-        <!-- About Section -->
-        <section id="about">
-            <h2>About</h2>
-            <p class="description">
-                I am a climate and geospatial data scientist specializing in land surface processes, remote sensing, and Earth system modeling. My research bridges physical understanding with operational decision-support tools, focusing on translating complex climate-system interactions into actionable climate services.
-            </p>
-            <p class="description">
-                I develop physics-informed machine learning frameworks to improve climate model representations and subseasonal-to-decadal predictions. Current work focuses on global land surface albedo parameterization for Earth system models, with applications to regional weather, seasonal forecasting, and decadal prediction skill. My methodological expertise spans memory-optimized geospatial data handling (50+ TB datasets), explainable AI, time series analysis, and high-performance computing workflows.
-            </p>
-            <p class="description">
-                I am committed to producing reproducible, operationally relevant research products and communicating climate science through peer-reviewed publications, conference presentations, and compelling visualizations tailored to diverse stakeholder needs.
-            </p>
-        </section>
-        
-        <!-- Research Section -->
-        <section id="research">
-            <h2>Research</h2>
+        <!-- Main Content -->
+        <main class="content">
+            <h1>Akarsh Ralhan</h1>
+            <p class="subtitle">Climate and Geospatial Data Scientist</p>
             
-            <h3>Global Land Surface Parameterization</h3>
-            <p class="description">
-                Developing hybrid physics-informed machine learning frameworks to capture spatiotemporal and subgrid variability in land surface albedo for Earth system models. Integration with WRF-based workflows for operational deployment at NOAA and NASA.
-            </p>
+            <!-- About -->
+            <section>
+                <h2>About</h2>
+                <p>
+                    I am a climate and geospatial data scientist specializing in land surface processes, remote sensing, and Earth system modeling. My research bridges physical understanding with operational applications in climate prediction and agricultural decision support.
+                </p>
+                <p>
+                    I develop physics-informed machine learning frameworks to improve climate model representations and subseasonal-to-decadal predictions. Current work focuses on global land surface albedo parameterization and its implications for regional climate variability.
+                </p>
+                <p>
+                    I am committed to producing reproducible, operationally relevant research products and communicating climate science through peer-reviewed publications, conference presentations, and community engagement.
+                </p>
+            </section>
             
-            <h3>Agricultural Decision Support & Crop Phenology</h3>
-            <p class="description">
-                Building machine learning frameworks for crop phenology prediction and planting date optimization. Operationalized within DAWN decision support dashboard for climate-resilient agricultural planning.
-            </p>
+            <!-- Research -->
+            <section>
+                <h2>Research</h2>
+                
+                <h3>Global Land Surface Parameterization</h3>
+                <p>
+                    Developing hybrid physics-informed machine learning frameworks to capture spatiotemporal and subgrid variability in land surface albedo for Earth system models. Integration with WRF-based climate modeling systems.
+                </p>
+                
+                <h3>Agricultural Decision Support & Crop Phenology</h3>
+                <p>
+                    Building machine learning frameworks for crop phenology prediction and planting date optimization. Operationalized within DAWN decision support dashboard for climate-resilient agricultural planning.
+                </p>
+                
+                <h3>Climate-Health Prediction Systems</h3>
+                <p>
+                    Quantifying climate-disease relationships through advanced time series analysis and deep learning (LSTMs, Neural Prophet) to enable early warning systems for disease outbreaks.
+                </p>
+                
+                <h3>Air Quality & Atmospheric Composition</h3>
+                <p>
+                    Pan-India PM2.5 characterization, source apportionment analysis, and application of concentration-weighted trajectory methods to identify dominant emission sources and sectoral contributions.
+                </p>
+                
+                <p class="keywords">
+                    <strong>Keywords:</strong> Physics-informed ML, XGBoost, LSTMs, Explainable AI (SHAP), Xarray, GeoPandas, Dask, WRF, Subseasonal-to-Decadal Prediction, Crop Phenology, Climate Services
+                </p>
+            </section>
             
-            <h3>Climate-Health Prediction Systems</h3>
-            <p class="description">
-                Quantifying climate-disease relationships through advanced time series analysis and deep learning (LSTMs, Neural Prophet) to enable early warning systems for disease outbreaks.
-            </p>
-            
-            <h3>Air Quality & Atmospheric Composition</h3>
-            <p class="description">
-                Pan-India PM2.5 characterization, source apportionment analysis, and application of concentration-weighted trajectory methods to identify dominant emission sources and sectoral contributions.
-            </p>
-            
-            <p class="keywords">
-                Keywords: Physics-informed ML, XGBoost, LSTMs, Explainable AI (SHAP, Counterfactuals), Xarray, GeoPandas, Dask, MPI, WRF, Subseasonal-to-Decadal Prediction, Crop Phenology, Climate Services
-            </p>
-        </section>
-        
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications</h2>
-            
-            <ul>
-                <li>
-                    <strong>Ralhan, A.</strong>, et al.: "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization" <em>Journal of Advances in Modeling Earth Systems</em> (JAMES), 2026.
-                </li>
-                <li>
-                    <strong>Maheshwarkar, P., Ralhan, A.</strong>, et al.: "Understanding the influence of meteorology and emission sources on PM2.5 mass concentrations across India" <em>Journal of Geophysical Research: Atmospheres</em>, 2022.
-                </li>
-                <li>
+            <!-- Publications -->
+            <section>
+                <h2>Publications</h2>
+                
+                <div class="publication-item">
+                    <strong>Ralhan, A.</strong>, et al.: "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization," <em>Journal of Advances in Modeling Earth Systems</em>, in review.
+                </div>
+                
+                <div class="publication-item">
+                    <strong>Maheshwarkar, P., Ralhan, A.</strong>, et al.: "Understanding the influence of meteorology and emission sources on PM2.5 mass concentrations across India," <em>Journal of Geophysical Research: Atmospheres</em>, 2023.
+                </div>
+                
+                <div class="publication-item">
                     <strong>Ralhan, A.</strong>, et al.: "Development of a Globally Applicable, Scale-Aware, and Multi-Modal Compatible Land Surface Albedo Parameterization Framework," in preparation.
-                </li>
-                <li>
+                </div>
+                
+                <div class="publication-item">
                     <strong>Ralhan, A.</strong>, et al.: "Capturing the Crop Phenological Response on Land Albedo Using a Novel Albedo Parameterization," in preparation.
-                </li>
-                <li>
+                </div>
+                
+                <div class="publication-item">
                     <strong>Ralhan, A.</strong>, et al.: "Implications of Changing Albedo Parameterization on Regional Sub-Seasonal to Seasonal to Decadal Predictions," in preparation.
-                </li>
-            </ul>
-        </section>
-        
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
+                </div>
+            </section>
             
-            <h3>PhD Candidate, Atmospheric and Oceanic Science</h3>
-            <p class="subtitle-text">University of Maryland, College Park | Aug 2023–Present</p>
-            <p class="description">
-                Developing hybrid physics-informed machine learning frameworks for land surface albedo parameterization. Designed C++/Python/Fortran integration into WRF for operational deployment. Built autonomous HPC pipelines (Dask, MPI) for 50+ TB datasets.
-            </p>
+            <!-- Experience -->
+            <section>
+                <h2>Experience</h2>
+                
+                <h3>PhD Candidate, Atmospheric and Oceanic Science</h3>
+                <p class="subtitle">University of Maryland, College Park | Aug 2023–Present</p>
+                <p>
+                    Developing hybrid physics-informed machine learning frameworks for land surface albedo parameterization. Designed C++/Python/Fortran integration into WRF for operational deployment.
+                </p>
+                
+                <h3>Research Assistant</h3>
+                <p class="subtitle">University of Maryland, College Park | Aug 2021–May 2023</p>
+                <p>
+                    Developed ML frameworks for crop phenology prediction and agricultural decision support. Established empirical GDD-phenology-albedo relationships for major crops.
+                </p>
+                
+                <h3>Site Operator, CASTNET and NADP Networks</h3>
+                <p class="subtitle">EPA, Beltsville, MD | Jul 2023–Nov 2023</p>
+                <p>
+                    Conducted operations for national air quality and atmospheric deposition monitoring networks. Performed laboratory work and instrument maintenance for regulatory-grade observations.
+                </p>
+                
+                <h3>Research Assistant</h3>
+                <p class="subtitle">Indian Institute of Science Education and Research, Bhopal | Aug 2020–Apr 2021</p>
+                <p>
+                    Conducted pan-India PM2.5 characterization analysis using eleven COALESCE network sites. Applied CWT analysis and HYSPLIT for source apportionment.
+                </p>
+            </section>
             
-            <h3>Research Assistant</h3>
-            <p class="subtitle-text">University of Maryland, College Park | Aug 2021–May 2023</p>
-            <p class="description">
-                Developed ML frameworks for crop phenology prediction and agricultural decision support. Established empirical GDD-phenology-albedo relationships for major crops. Operationalized climate-health forecasting systems for disease risk prediction.
-            </p>
-            
-            <h3>Site Operator, CASTNET and NADP Networks</h3>
-            <p class="subtitle-text">EPA, Beltsville, MD | Jul 2023–Nov 2023</p>
-            <p class="description">
-                Conducted operations for national air quality and atmospheric deposition monitoring networks. Performed laboratory work and instrument maintenance for regulatory-grade observations.
-            </p>
-            
-            <h3>Research Assistant</h3>
-            <p class="subtitle-text">Indian Institute of Science Education and Research, Bhopal | Aug 2020–Apr 2021</p>
-            <p class="description">
-                Conducted pan-India PM2.5 characterization analysis using eleven COALESCE network sites. Applied CWT analysis and HYSPLIT for source apportionment and emission inventory reconciliation.
-            </p>
-        </section>
-        
-        <!-- Awards Section -->
-        <section id="awards">
-            <h2>Awards and Honors</h2>
-            
-            <div class="award-item">
-                <span class="year">2026.</span> Dr. Ann G. Wylie Dissertation Fellowship, The Graduate School, University of Maryland.
-            </div>
-            <div class="award-item">
-                <span class="year">2025.</span> Eugene Rasmusson Graduate Student Fellowship for Research Excellence, University of Maryland.
-            </div>
-            <div class="award-item">
-                <span class="year">2025.</span> US Green Fund Scholarship Award for Academic and Research Excellence, University of Maryland.
-            </div>
-            <div class="award-item">
-                <span class="year">2024.</span> Helmut Landsberg Scholarship for Outstanding Service to the Program, University of Maryland.
-            </div>
-            <div class="award-item">
-                <span class="year">2022.</span> Helmut Landsberg Scholarship for Outstanding Student Seminar, University of Maryland.
-            </div>
-            <div class="award-item">
-                <span class="year">2021.</span> Gold Medal for Highest GPA in Graduating Department, IISER, India.
-            </div>
-            <div class="award-item">
-                <span class="year">2016-2021.</span> Kishore Vaigyanik Protsahan Yojana (KVPY) Fellowship, DST, Government of India.
-            </div>
-        </section>
-        
-        <!-- Connect Section -->
-        <section id="connect">
-            <h2>Connect</h2>
-            <p class="description">
-                Contact: <a href="mailto:aralhan@umd.edu">aralhan@umd.edu</a>
-            </p>
-            <ul>
-                <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
-                <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                <li><a href="https://orcid.org" target="_blank">ORCID</a></li>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="#" target="_blank">Curriculum Vitae (PDF)</a></li>
-            </ul>
-        </section>
+            <!-- Awards -->
+            <section>
+                <h2>Awards & Honors</h2>
+                
+                <ul>
+                    <li><strong>2026</strong> — Dr. Ann G. Wylie Dissertation Fellowship, The Graduate School, University of Maryland</li>
+                    <li><strong>2025</strong> — Eugene Rasmusson Graduate Student Fellowship for Research Excellence, University of Maryland</li>
+                    <li><strong>2025</strong> — US Green Fund Scholarship Award for Academic and Research Excellence, University of Maryland</li>
+                    <li><strong>2024</strong> — Helmut Landsberg Scholarship for Outstanding Service to the Program, University of Maryland</li>
+                    <li><strong>2022</strong> — Helmut Landsberg Scholarship for Outstanding Student Seminar, University of Maryland</li>
+                    <li><strong>2021</strong> — Gold Medal for Highest GPA in Graduating Department, IISER, India</li>
+                    <li><strong>2016–2021</strong> — Kishore Vaigyanik Protsahan Yojana (KVPY) Fellowship, DST, Government of India</li>
+                </ul>
+            </section>
+        </main>
         
         <footer>
-            <p>Copyright &copy; 2026 Akarsh Ralhan</p>
+            <p>© 2026 Akarsh Ralhan. Last updated August 2026.</p>
         </footer>
     </div>
 </body>
