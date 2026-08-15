@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Akarsh Ralhan - Climate & Geospatial Data Scientist specializing in land surface processes, remote sensing, and Earth system modeling" />
+  <meta property="og:title" content="Akarsh Ralhan | Climate & Geospatial Data Scientist">
+  <meta property="og:description" content="PhD candidate developing physics-informed ML for improved climate model representations and Earth system predictability.">
+  <meta property="og:type" content="website">
   <title>Akarsh Ralhan | Climate & Geospatial Data Scientist</title>
 
   <style>
     :root {
       --bg: #fbfaf7;
-      --text: #202124;
+      --text: #1a1c1e;
       --muted: #5f6368;
       --line: #dedad2;
       --accent: #5a6b7a;
@@ -32,7 +35,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
       color: var(--text);
       background: var(--bg);
-      line-height: 1.65;
+      line-height: 1.75;
     }
 
     a {
@@ -46,7 +49,7 @@
     header {
       background: linear-gradient(135deg, #3a4a5a 0%, #5a6b7a 100%);
       color: white;
-      padding: 70px 22px 60px;
+      padding: 80px 22px 60px;
       text-align: center;
     }
 
@@ -60,17 +63,19 @@
       font-size: clamp(2rem, 5vw, 3.2rem);
       line-height: 1.1;
       letter-spacing: -0.03em;
+      font-weight: 700;
     }
 
     .subtitle {
-      margin: 0 auto 14px;
+      margin: 0 auto 18px;
       font-size: clamp(0.95rem, 2.1vw, 1.15rem);
       max-width: 850px;
       color: rgba(255, 255, 255, 0.95);
+      font-weight: 500;
     }
 
     .contact-info {
-      margin: 0 auto 20px;
+      margin: 0 auto 22px;
       font-size: 0.9rem;
       color: rgba(255, 255, 255, 0.92);
     }
@@ -78,11 +83,11 @@
     .contact-info a { color: white; font-weight: 700; }
 
     .hero-blurb {
-      margin: 0 auto 24px;
+      margin: 0 auto 28px;
       max-width: 850px;
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: rgba(255, 255, 255, 0.90);
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .hero-links {
@@ -90,7 +95,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      margin-top: 26px;
+      margin-top: 28px;
     }
 
     .hero-links a {
@@ -116,14 +121,14 @@
       z-index: 10;
       background-color: rgba(58, 74, 90, 0.96);
       backdrop-filter: blur(10px);
-      padding: 10px 8px;
+      padding: 12px 8px;
       text-align: center;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
     }
 
     nav a {
       display: inline-block;
-      margin: 4px 9px;
+      margin: 4px 11px;
       color: white;
       text-decoration: none;
       font-size: 0.91rem;
@@ -136,90 +141,104 @@
     main {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 34px 20px 55px;
+      padding: 50px 20px 60px;
     }
 
-    section { margin-bottom: 36px; }
+    section { margin-bottom: 56px; }
+    section[id] { scroll-margin-top: 80px; }
 
     .section-card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 26px;
+      padding: 36px;
       box-shadow: var(--shadow);
     }
 
     h2 {
-      margin: 0 0 15px;
-      font-size: 1.52rem;
+      margin: 0 0 20px;
+      font-size: 1.75rem;
       line-height: 1.2;
       letter-spacing: -0.02em;
       color: var(--accent);
+      font-weight: 700;
     }
 
     h3 {
-      margin: 22px 0 8px;
-      font-size: 1.02rem;
+      margin: 24px 0 8px;
+      font-size: 1.15rem;
       color: #3a4a5a;
+      font-weight: 700;
     }
 
-    p { margin-top: 0; }
+    p { 
+      margin-top: 0;
+      max-width: 70ch;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
 
     .lead {
-      font-size: 1.02rem;
+      font-size: 1.05rem;
       color: #303134;
       line-height: 1.8;
+      margin-bottom: 18px;
     }
 
     .grid-two {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+      gap: 20px;
+      margin-top: 24px;
     }
 
     .mini-card {
       background: #f9fbff;
       border: 1px solid var(--line);
       border-radius: 15px;
-      padding: 18px;
+      padding: 20px;
     }
 
     .mini-card h3 {
       margin-top: 0;
       color: #3a4a5a;
+      font-size: 1.08rem;
     }
 
     .mini-card p {
-      font-size: 0.92rem;
-      line-height: 1.6;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin: 8px 0 0 0;
     }
 
     .tag-list {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     .tag {
       background: var(--accent-soft);
       color: #3a4a5a;
-      padding: 5px 10px;
+      padding: 6px 12px;
       border-radius: 999px;
-      font-size: 0.84rem;
+      font-size: 0.85rem;
       font-weight: 700;
+      border: 1px solid #d0dae8;
     }
 
     .timeline {
       display: grid;
-      gap: 14px;
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .timeline-item {
       border-left: 4px solid var(--accent);
       background: #f9fbff;
       border-radius: 0 14px 14px 0;
-      padding: 14px 18px;
+      padding: 18px 22px;
       border-top: 1px solid var(--line);
       border-right: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
@@ -227,26 +246,27 @@
 
     .timeline-item .role {
       font-weight: 700;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
       color: #3a4a5a;
-      font-size: 0.98rem;
+      font-size: 1rem;
     }
 
     .timeline-item .place {
       color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 7px;
+      font-size: 0.92rem;
+      margin-bottom: 10px;
     }
 
     .timeline-item ul {
-      margin: 8px 0 0 20px;
+      margin: 10px 0 0 20px;
       padding: 0;
     }
 
     .timeline-item li { 
-      margin-bottom: 7px;
-      line-height: 1.6;
-      font-size: 0.92rem;
+      margin-bottom: 8px;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      max-width: 65ch;
     }
 
     .publications {
@@ -256,10 +276,11 @@
     }
 
     .publications li {
-      padding: 15px 0;
+      padding: 16px 0;
       border-bottom: 1px solid var(--line);
-      line-height: 1.7;
-      font-size: 0.92rem;
+      line-height: 1.75;
+      font-size: 0.95rem;
+      max-width: 68ch;
     }
 
     .publications li:last-child { border-bottom: none; }
@@ -272,15 +293,28 @@
       font-weight: 700;
       color: var(--inprep-text);
       background: var(--inprep-badge);
-      padding: 2px 8px;
+      padding: 3px 9px;
       border-radius: 999px;
-      margin-right: 6px;
+      margin-right: 8px;
       white-space: nowrap;
     }
 
     .paper-link {
       font-weight: 700;
       white-space: nowrap;
+    }
+
+    .pub-section {
+      margin-top: 24px;
+    }
+
+    .pub-section-title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #3a4a5a;
+      margin: 20px 0 14px;
+      border-bottom: 2px solid #e8eef5;
+      padding-bottom: 8px;
     }
 
     .awards {
@@ -292,8 +326,9 @@
     .awards li {
       padding: 12px 0;
       border-bottom: 1px solid #eee;
-      font-size: 0.92rem;
-      line-height: 1.6;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      max-width: 65ch;
     }
 
     .awards li:last-child { border-bottom: none; }
@@ -309,7 +344,7 @@
 
     .social-links li a {
       display: inline-block;
-      padding: 9px 13px;
+      padding: 9px 14px;
       border-radius: 999px;
       background: var(--accent-soft);
       color: #3a4a5a;
@@ -329,46 +364,49 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 16px;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     .skill-category {
       background: #f9fbff;
       border: 1px solid var(--line);
       border-radius: 12px;
-      padding: 14px;
+      padding: 16px;
     }
 
     .skill-category h4 {
-      margin: 0 0 8px;
-      font-size: 0.92rem;
+      margin: 0 0 10px;
+      font-size: 0.95rem;
       color: #3a4a5a;
       font-weight: 700;
     }
 
     .skill-category p {
       margin: 0;
-      font-size: 0.87rem;
-      color: #666;
-      line-height: 1.5;
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.6;
     }
 
     footer {
       background: var(--nav);
       color: white;
       text-align: center;
-      padding: 18px 12px;
-      font-size: 0.88rem;
+      padding: 20px 12px;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 760px) {
       header { padding: 50px 18px 45px; }
       nav { position: static; }
-      main { padding: 24px 14px 45px; }
-      .section-card { padding: 20px; }
+      main { padding: 30px 14px 45px; }
+      .section-card { padding: 24px; }
       .grid-two { grid-template-columns: 1fr; }
       h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.5rem; }
       .skills-grid { grid-template-columns: 1fr; }
+      .hero-links a { font-size: 0.82rem; padding: 8px 11px; }
+      .timeline-item { padding: 14px 18px; }
     }
   </style>
 </head>
@@ -377,9 +415,9 @@
   <header>
     <div class="hero-content">
       <h1>Akarsh Ralhan</h1>
-      <p class="subtitle">Climate & Geospatial Data Scientist | Earth System Modeling | Physics-Informed Machine Learning</p>
-      <p class="contact-info">Email: <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a> | Phone: <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
-      <p class="hero-blurb">I develop physics-informed machine learning frameworks to improve climate model representations, enhance Earth system predictability, and reduce climate uncertainty. My research translates advances in geospatial data processing, remote sensing, and statistical modeling into operational Earth system science with direct relevance to weather prediction, climate services, and climate-informed decision-making.</p>
+      <p class="subtitle">Climate & Geospatial Data Scientist | Earth System Modeling & Machine Learning</p>
+      <p class="contact-info">Email: <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a></p>
+      <p class="hero-blurb">Land surface properties shape weather, climate, and agriculture—yet most Earth system models treat a forest like asphalt. I develop physics-informed machine learning frameworks that teach models to recognize real-world complexity: how crops alter surface reflectivity seasonally, how snow interacts with vegetation, how local heterogeneity cascades into regional prediction skill. The goal is operational models that scientists and decision-makers can trust.</p>
       <div class="hero-links">
         <a href="mailto:ralhanakarsh1998@gmail.com">Email</a>
         <a href="https://scholar.google.com/citations?hl=en&user=uQkM6xAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
@@ -404,43 +442,39 @@
   <main>
     <section id="about" class="section-card">
       <h2>About</h2>
-      <p class="lead">I am a PhD candidate in Atmospheric and Oceanic Science at the University of Maryland, specializing in land surface processes, remote sensing, and Earth system science. My research bridges physical understanding with machine learning to advance climate predictability, improve model representations of critical Earth system components, and reduce uncertainties in climate projections.</p>
-      <p>I develop <strong>physics-informed machine learning frameworks</strong> to capture spatiotemporal variability in land surface properties (particularly albedo) and integrate these advances into operational Earth system models for improved weather and climate prediction across regional to global scales and subseasonal to decadal timescales.</p>
-      <p>My technical expertise spans <strong>multi-method statistical modeling and large-scale geospatial data processing</strong> using Python (Xarray, pandas, scikit-learn, Dask), with rigorous uncertainty quantification, model validation, and bias correction of high-resolution climate datasets. I design robust, reproducible analytical pipelines using high-performance parallel computing and version-controlled workflows, enabling scalable delivery of transparent climate products for operational and research applications.</p>
-      <p>I am committed to bridging scientific research and operational impact through peer-reviewed publications, technical reporting, interdisciplinary collaboration, and effective communication of complex climate science to support climate services and informed decision-making.</p>
+      <p class="lead">I am a PhD candidate in Atmospheric and Oceanic Science at the University of Maryland, developing hybrid physics-informed machine learning frameworks to advance climate model representations and Earth system predictability.</p>
+      <p>My research focuses on <strong>land surface parameterization</strong>—specifically how to capture the complex interplay between vegetation dynamics, surface albedo, and atmospheric forcing. Rather than accepting model simplifications, I build frameworks that learn spatiotemporal patterns from satellite and reanalysis data, then integrate these into coupled climate models for measurable improvements in weather and seasonal prediction skill.</p>
+      <p>I process large-scale geospatial datasets (Xarray, Dask, parallel computing) with rigorous uncertainty quantification and validation pipelines. Beyond technical execution, I am committed to translating climate science into operational products that inform agricultural decision-making and climate services.</p>
     </section>
 
     <section id="research" class="section-card">
-      <h2>Research Focus Areas</h2>
+      <h2>Research Focus</h2>
       <div class="grid-two">
         <div class="mini-card">
-          <h3>Global Land Surface Albedo Parameterization</h3>
-          <p>Developing hybrid physics-informed ML frameworks to capture spatiotemporal and subgrid variability in land surface albedo. Integration with coupled models (CWRF) demonstrates improved surface energy exchange for weather and climate prediction.</p>
+          <h3>Land Surface Albedo</h3>
+          <p>Most climate models average surface properties over 10 km grid cells—missing fine-scale heterogeneity. I develop ML frameworks that resolve subgrid albedo variability using satellite observations, then validate improvements in coupled model forecasts.</p>
         </div>
         <div class="mini-card">
-          <h3>Crop Phenology & Agricultural Decision Support</h3>
-          <p>Building ML frameworks for crop phenology prediction and plantation date optimization. Established quantitative linkages between growing degree days, crop phenology, and albedo evolution for five major crops at 1km resolution.</p>
+          <h3>Crop Phenology Prediction</h3>
+          <p>Planting date decisions affect crop exposure to drought and heat stress. I link satellite-observed leaf area index to growing degree days and albedo evolution, creating decision-relevant phenology forecasts for the DAWN agricultural support system.</p>
         </div>
         <div class="mini-card">
-          <h3>Climate-Health Prediction Systems</h3>
-          <p>Developing multinational climate-health forecasting frameworks linking meteorological variability with disease incidence. Applied advanced time series methods (ARIMA, EEMD, STL) and deep learning (LSTM, Neural Prophet) for seasonal health risk prediction.</p>
+          <h3>Climate-Health Forecasting</h3>
+          <p>Disease outbreaks follow meteorological patterns with lag times of weeks. I apply LSTM and time-series decomposition methods to identify climate drivers of disease incidence and build seasonal risk forecasts for multi-country health networks.</p>
         </div>
         <div class="mini-card">
-          <h3>Air Quality & Atmospheric Composition</h3>
-          <p>Pan-India PM2.5 characterization and source apportionment using concentration-weighted trajectory analysis. Integrated meteorological and air quality datasets to assess environmental drivers of air quality variability.</p>
+          <h3>Air Quality & Attribution</h3>
+          <p>Surface PM2.5 varies dramatically across regions and seasons. I conducted the first pan-India characterization study using concentration-weighted trajectories to quantify how distant emission sources impact local air quality.</p>
         </div>
       </div>
-      <div class="tag-list" aria-label="Research methods and interests">
+      <div class="tag-list">
         <span class="tag">Physics-informed ML</span>
-        <span class="tag">XGBoost & Neural Networks</span>
-        <span class="tag">LSTM & Time Series</span>
-        <span class="tag">Explainable AI (SHAP)</span>
+        <span class="tag">XGBoost & LSTMs</span>
+        <span class="tag">Explainable AI</span>
         <span class="tag">Remote Sensing</span>
-        <span class="tag">Xarray & Geospatial Data</span>
+        <span class="tag">Geospatial Data Processing</span>
         <span class="tag">Regional Climate Modeling</span>
-        <span class="tag">Earth System Models</span>
         <span class="tag">Uncertainty Quantification</span>
-        <span class="tag">Climate Extremes</span>
       </div>
     </section>
 
@@ -448,54 +482,64 @@
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h4>Programming Languages</h4>
-          <p>Python, Fortran, C++, MATLAB, Bash, HTML</p>
+          <h4>Programming</h4>
+          <p>Python (primary), Fortran, C++, MATLAB, Bash</p>
         </div>
         <div class="skill-category">
           <h4>ML & Deep Learning</h4>
-          <p>scikit-learn, XGBoost, TensorFlow, Keras, PyTorch, LSTM, Neural Networks, Statsmodels</p>
+          <p>scikit-learn, XGBoost, TensorFlow/Keras, PyTorch, LSTM, Statsmodels</p>
         </div>
         <div class="skill-category">
-          <h4>Data Processing</h4>
-          <p>Xarray, Pandas, NumPy, Dask, Parallel Computing (MPI, OpenMP), Slurm HPC</p>
+          <h4>Data & HPC</h4>
+          <p>Xarray, Pandas, Dask, MPI/OpenMP, Slurm HPC, parallel workflows</p>
         </div>
         <div class="skill-category">
-          <h4>Climate & Geospatial Tools</h4>
-          <p>CWRF, MPAS, QGIS, ArcGIS, NCL, NCO/CDO, Cartopy</p>
+          <h4>Climate Tools</h4>
+          <p>CWRF, MPAS, QGIS, NCL, NCO/CDO, Cartopy, HYSPLIT</p>
         </div>
         <div class="skill-category">
-          <h4>Visualization & Documentation</h4>
-          <p>Matplotlib, Seaborn, Ncview, Adobe Illustrator, LaTeX</p>
+          <h4>Visualization</h4>
+          <p>Matplotlib, Seaborn, Plotly, Adobe Illustrator, LaTeX</p>
         </div>
         <div class="skill-category">
-          <h4>Development Tools</h4>
-          <p>Git, Version Control, Jupyter, Vim, Build Systems</p>
+          <h4>Workflow Tools</h4>
+          <p>Git, Jupyter, version control, reproducible pipelines</p>
         </div>
       </div>
     </section>
 
     <section id="publications" class="section-card">
       <h2>Publications</h2>
-      <ul class="publications">
-        <li>
-          <span class="paper-title">Ralhan, A., et al.:</span> "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization," <em>Journal of Advances in Modeling Earth Systems</em>, 13(3), e2025MS005436. <a class="paper-link" href="https://doi.org/10.1029/2025MS005436" target="_blank" rel="noopener">Web access</a>.
-        </li>
-        <li>
-          <span class="paper-title">Maheshwarkar, P., Ralhan, A., et al.:</span> "Understanding the Influence of Meteorology and Emission Sources on PM2.5 Mass Concentrations Across India: First Results From the COALESCE Network," <em>Journal of Geophysical Research: Atmospheres</em>, 127(8), e2021JD035663. <a class="paper-link" href="https://doi.org/10.1029/2021JD035663" target="_blank" rel="noopener">Web access</a>.
-        </li>
-        <li>
-          <span class="paper-status">In Preparation</span>
-          <span class="paper-title">Ralhan, A., et al.:</span> "Development of a Globally Applicable, Scale-Aware, and Multi-Modal Compatible Land Surface Albedo Parameterization Framework."
-        </li>
-        <li>
-          <span class="paper-status">In Preparation</span>
-          <span class="paper-title">Ralhan, A., et al.:</span> "Capturing the Crop Phenological Response on Land Albedo Using a Novel Albedo Parameterization."
-        </li>
-        <li>
-          <span class="paper-status">In Preparation</span>
-          <span class="paper-title">Ralhan, A., et al.:</span> "Implications of Changing Albedo Parameterization on Regional Sub-Seasonal to Seasonal to Decadal Predictions."
-        </li>
-      </ul>
+      
+      <div class="pub-section">
+        <div class="pub-section-title">Peer-Reviewed</div>
+        <ul class="publications">
+          <li>
+            <span class="paper-title">Ralhan, A., et al.:</span> "Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization," <em>Journal of Advances in Modeling Earth Systems</em>, 13(3), e2025MS005436, 2025. <a class="paper-link" href="https://doi.org/10.1029/2025MS005436" target="_blank" rel="noopener">DOI</a>
+          </li>
+          <li>
+            <span class="paper-title">Maheshwarkar, P., Ralhan, A., et al.:</span> "Understanding the Influence of Meteorology and Emission Sources on PM2.5 Mass Concentrations Across India," <em>Journal of Geophysical Research: Atmospheres</em>, 127(8), e2021JD035663, 2022. <a class="paper-link" href="https://doi.org/10.1029/2021JD035663" target="_blank" rel="noopener">DOI</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-section">
+        <div class="pub-section-title">In Preparation</div>
+        <ul class="publications">
+          <li>
+            <span class="paper-status">In Prep</span>
+            <span class="paper-title">Ralhan, A., et al.:</span> "Globally Applicable, Scale-Aware Albedo Parameterization Framework" — Extending physics-informed methods across multiple land cover types and spatial resolutions.
+          </li>
+          <li>
+            <span class="paper-status">In Prep</span>
+            <span class="paper-title">Ralhan, A., et al.:</span> "Crop Phenology-Driven Albedo Evolution" — Quantifying seasonal albedo changes tied to crop growth stages and implications for regional forecasting.
+          </li>
+          <li>
+            <span class="paper-status">In Prep</span>
+            <span class="paper-title">Ralhan, A., et al.:</span> "Albedo Parameterization Impact on Sub-Seasonal to Decadal Predictions" — Demonstrating forecast skill improvement from improved land surface representation.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="experience" class="section-card">
@@ -505,9 +549,9 @@
           <div class="role">PhD Candidate, Atmospheric and Oceanic Science</div>
           <div class="place">University of Maryland, College Park | Aug 2023–Present</div>
           <ul>
-            <li><strong>Global Land Surface Albedo Parameterization:</strong> Developed physics-informed ML framework to improve representation of land-atmosphere interactions. Designed hybrid framework combining biophysical drivers with bias correction to resolve subgrid heterogeneity and improve predictive performance across regional to global scales.</li>
-            <li><strong>Model Integration & Validation:</strong> Integrated parameterization with coupled models (CWRF) demonstrating improved surface energy exchange. Conducted rigorous spatiotemporal evaluation, seasonal cycle analysis, and counterfactual experiments for bio-physical consistency and robustness.</li>
-            <li><strong>Scalable Workflows:</strong> Built reproducible Python workflows for large-scale satellite and reanalysis data processing, enabling efficient global analysis suitable for Earth system modeling and climate monitoring applications.</li>
+            <li><strong>Albedo Parameterization:</strong> Developed hybrid physics-informed ML framework to capture subgrid albedo heterogeneity and surface energy exchange dynamics. Integrated with coupled model (CWRF) and demonstrated measurable forecast skill gains during growing season.</li>
+            <li><strong>Scalable Data Processing:</strong> Built automated Python workflows processing 20+ years of satellite and reanalysis data; reduced processing time from days to hours using Dask parallelization across HPC clusters.</li>
+            <li><strong>Model Validation:</strong> Conducted rigorous spatiotemporal evaluation including seasonal cycle analysis, bias correction assessment, and regional sensitivity testing.</li>
           </ul>
         </div>
 
@@ -515,18 +559,17 @@
           <div class="role">Research Assistant</div>
           <div class="place">University of Maryland, College Park | Aug 2021–May 2023</div>
           <ul>
-            <li><strong>Crop Phenology Prediction:</strong> Developed plantation date prediction framework using LAI-driven phenological modeling and ML across CONUS domain at 1km resolution. Established quantitative linkage between plantation timing, growing degree days, and crop-specific albedo evolution for five major crops.</li>
-            <li><strong>Climate-Health Forecasting:</strong> Developed multinational frameworks linking meteorological variability with disease incidence, applying advanced time series methods (ARIMA, EEMD, STL) and deep learning (LSTM, Neural Prophet) for seasonal health risk prediction while maintaining climate driver interpretability.</li>
-            <li><strong>Decision Support:</strong> Contributed to DAWN decision support framework, translating crop-climate relationships into actionable insights for farmer advisory systems and climate-resilient agriculture planning.</li>
+            <li><strong>Crop Phenology:</strong> Developed ML framework linking LAI-derived phenology to optimal planting windows for five major crops. Achieved quantitative relationships between GDD, phenological stage, and albedo at 1 km resolution across CONUS.</li>
+            <li><strong>Climate-Health Models:</strong> Built multinational disease forecasting systems using LSTM and STL decomposition to isolate meteorological drivers from seasonal/trend components.</li>
+            <li><strong>Operational Integration:</strong> Contributed phenology predictions and decision thresholds to DAWN decision-support system for farmer advisory services.</li>
           </ul>
         </div>
 
         <div class="timeline-item">
-          <div class="role">Site Operator, CASTNET and NADP Networks</div>
+          <div class="role">Site Operator, CASTNET & NADP Networks</div>
           <div class="place">EPA, Beltsville, MD | Jul 2023–Nov 2023</div>
           <ul>
-            <li>Conducted weekly operations for EPA national air quality and atmospheric deposition monitoring networks ensuring regulatory-grade observations for climate and air quality assessments.</li>
-            <li>Performed laboratory work, instrument maintenance for air quality and meteorological equipment, and regulatory reporting to Maryland Department of Natural Resources.</li>
+            <li>Operated EPA national air quality and atmospheric deposition networks; ensured regulatory-grade quality assurance for climate and air quality monitoring.</li>
           </ul>
         </div>
 
@@ -534,27 +577,8 @@
           <div class="role">Research Assistant</div>
           <div class="place">Indian Institute of Science Education and Research, Bhopal | Aug 2020–Apr 2021</div>
           <ul>
-            <li><strong>Pan-India PM2.5 Analysis:</strong> Led first comprehensive observational analysis of surface PM2.5 using eleven COALESCE network sites, quantifying spatial and temporal variability across diverse climatic regimes.</li>
-            <li><strong>Source Apportionment:</strong> Applied concentration-weighted trajectory (CWT) analysis combined with emissions inventory reconciliation to quantify sectoral contributions to PM2.5 and identify dominant source regions.</li>
-            <li><strong>Data Integration:</strong> Integrated synchronized meteorological and air quality datasets to assess influence of temperature, pressure, and humidity on PM2.5 variability using causality analysis and multivariable regression.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="role">Research Intern</div>
-          <div class="place">Indian Institute of Technology Bombay | May 2019–July 2019</div>
-          <ul>
-            <li>Developed theoretical and numerical models for aerosol particle scavenging in electrospray air cleaners using Mathematica and COMSOL Multiphysics.</li>
-            <li>Conducted experimental design and analysis investigating charging mechanisms and droplet-particle interactions to optimize capture efficiency.</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="role">Research Intern</div>
-          <div class="place">Indian Institute of Technology Kanpur | May 2018–July 2018</div>
-          <ul>
-            <li>Investigated hygroscopic growth and cloud activation behavior of inorganic aerosols using HT-DMA and CCNc instrumentation.</li>
-            <li>Performed detailed data analysis with multiple charge corrections in MATLAB, deriving κ values and characterizing aerosol size-dependent growth.</li>
+            <li><strong>Pan-India PM2.5 Study:</strong> Led first comprehensive surface-level PM2.5 characterization using eleven COALESCE sites. Identified spatial and temporal patterns across diverse climate zones.</li>
+            <li><strong>Source Apportionment:</strong> Applied CWT analysis to quantify contributions from Punjab agricultural emissions and industrial sources; reconciled findings with emissions inventory.</li>
           </ul>
         </div>
       </div>
@@ -565,16 +589,16 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="role">Ph.D. in Atmospheric and Oceanic Sciences (Candidate)</div>
-          <div class="place">University of Maryland, College Park, U.S.A | Aug 2021–Present</div>
+          <div class="place">University of Maryland, College Park | Aug 2021–Present</div>
           <ul>
-            <li>GPA: 3.97/4.0 | MS completed Dec 2025</li>
+            <li>GPA 3.97/4.0 | MS completed Dec 2025</li>
           </ul>
         </div>
         <div class="timeline-item">
           <div class="role">BS–MS in Earth and Environmental Sciences (Gold Medal)</div>
           <div class="place">Indian Institute of Science Education and Research, Bhopal, India | Aug 2016–May 2021</div>
           <ul>
-            <li>GPA: 9.87/10 | Minor: Chemical Engineering</li>
+            <li>GPA 9.87/10 | Minor in Chemical Engineering | Highest GPA in graduating cohort</li>
           </ul>
         </div>
       </div>
@@ -583,55 +607,19 @@
     <section id="awards" class="section-card">
       <h2>Awards & Fellowships</h2>
       <ul class="awards">
-        <li><strong>2026:</strong> Dr. Ann G. Wylie Dissertation Fellowship, The Graduate School, University of Maryland</li>
-        <li><strong>2026:</strong> Eugene Rasmusson Graduate Student Fellowship for Research Excellence, University of Maryland</li>
-        <li><strong>2025:</strong> US Green Fund Scholarship Award for Academic and Research Excellence, University of Maryland</li>
-        <li><strong>2024:</strong> Helmut Landsberg Scholarship for Outstanding Service to the Program, University of Maryland</li>
-        <li><strong>2022:</strong> Helmut Landsberg Scholarship for Outstanding Student Seminar, University of Maryland</li>
-        <li><strong>2021:</strong> Gold Medal for Highest GPA in Graduating Department, IISER, India</li>
-        <li><strong>2020:</strong> College of Computer, Mathematical, and Natural Sciences (CMNS) Dean's Fellowship, University of Maryland</li>
-        <li><strong>2016–2021:</strong> Kishore Vaigyanik Protsahan Yojana (KVPY) Fellowship, Department of Science and Technology, Government of India</li>
-      </ul>
-    </section>
-
-    <section id="teaching" class="section-card">
-      <h2>Teaching & Outreach</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="role">Teaching Assistant & Lab Instructor</div>
-          <div class="place">University of Maryland, College Park | Aug 2021–Dec 2022</div>
-          <ul>
-            <li>Led discussion sessions for AOSC 200: Weather and Climate</li>
-            <li>Taught experimental lab sessions (AOSC 210) including weather observations, map analysis, forecasting, and climate modeling exercises</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <div class="role">Teaching Assistant</div>
-          <div class="place">IISER Bhopal | Jan 2017–May 2017</div>
-          <ul>
-            <li>HSS 101: Basics of Communication Skills</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="presentations" class="section-card">
-      <h2>Research Presentations</h2>
-      <ul class="publications">
-        <li><strong>Talk:</strong> "Robust Machine Learning-Based Albedo Parameterization: Generalization Across Land Cover Schemes," 105th Annual AMS Meeting, 2025</li>
-        <li><strong>Talk:</strong> "Advancing Crop Albedo Parameterization through Physics-Informed Machine Learning," AGU Fall Meeting, 2024</li>
-        <li><strong>Poster:</strong> "Capturing Spatiotemporal and Subgrid Variability in Global Snow Albedo Parameterization," S2S Land–Atmosphere Interactions Workshop, NCAR, 2026</li>
-        <li><strong>Poster:</strong> "DAWN: Coproducing Predictive Decision Support System Using Enhanced NOAA Operational Climate Forecasts to Improve Agricultural Operations," AGU Fall Meeting, 2024</li>
-        <li><strong>Poster:</strong> "Advancing Global Land Surface Albedo Parameterization with Physics-Informed Machine Learning Methods," 104th Annual AMS Meeting, 2024</li>
-        <li><strong>Poster:</strong> "Development Of Electrospray-Based Indoor Air Cleaner System: Modeling And Comparison With Experiments," Asian Aerosol Conference, Taiwan, 2022 (co-author)</li>
-        <li><strong>Poster:</strong> "Online size segregated mass measurement of aerosols from traditional cook-stove emissions in Central India using a Quartz Crystal Microbalance-Micro Orifice Uniform Deposition Impactor," Asian Aerosol Conference, Hong Kong, 2019 (co-author)</li>
+        <li><strong>2026:</strong> Dr. Ann G. Wylie Dissertation Fellowship — Recognizes exceptional dissertation research and academic promise at UMD</li>
+        <li><strong>2026:</strong> Eugene Rasmusson Graduate Student Fellowship — Research excellence award in Atmospheric Sciences</li>
+        <li><strong>2025:</strong> US Green Fund Scholarship — Academic and research achievement</li>
+        <li><strong>2024:</strong> Helmut Landsberg Scholarship — Service to atmospheric science program</li>
+        <li><strong>2021:</strong> Gold Medal, IISER Bhopal — Highest GPA in Earth and Environmental Sciences (9.87/10)</li>
+        <li><strong>2016–2021:</strong> KVPY Fellowship — Government of India national science scholarship for exceptional students</li>
       </ul>
     </section>
 
     <section id="connect" class="section-card">
       <h2>Connect</h2>
-      <p>I'm passionate about developing climate science solutions that bridge research, operational impact, and decision-relevant applications. I'm always interested in collaborating on problems at the intersection of climate science, geospatial data, machine learning, and Earth system predictability.</p>
-      <p><strong>Contact:</strong> <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a> | <a href="tel:+1-667-294-0973">+1-667-294-0973</a></p>
+      <p>I'm interested in problems at the intersection of climate science, geospatial data, machine learning, and operational decision-support. Whether advancing model physics, building forecasting tools, or communicating climate science to stakeholders, I'm energized by work that bridges research and real-world impact.</p>
+      <p><strong>Contact:</strong> <a href="mailto:ralhanakarsh1998@gmail.com">ralhanakarsh1998@gmail.com</a> | <a href="mailto:ralhanak@umd.edu">ralhanak@umd.edu</a></p>
       <ul class="social-links">
         <li><a href="https://scholar.google.com/citations?hl=en&user=uQkM6xAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="https://github.com/Akarshralhan1998" target="_blank" rel="noopener">GitHub</a></li>
